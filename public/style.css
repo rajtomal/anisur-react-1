@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(31, 29, 29);
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-parent{
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+.p-tag{
+    color: rgb(151, 151, 151);
+}
+.title{
+    color: aqua;
+}
