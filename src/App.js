@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "./components/card"
 import Data from "./data.json"
+import NestedData from "./components/nested"
+import ClassComponent from "./components/class-component"
+
 
 
 
@@ -16,8 +19,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Todo List</h1>
+      <h1>Todo List with <strong style={{color : "red"}}>JSON Data</strong></h1>
       {Data.map((item, index) => <Card key = {index} titleName = {item.titleName} title = {item.title} detiles = {item.detiles}/>)}
+      <NestedData />
+      <ClassComponent title = "Hello Class component" />
     </div>
   );
 }

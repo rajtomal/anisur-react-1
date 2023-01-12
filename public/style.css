@@ -1,21 +1,60 @@
-body{
+body {
     background-color: rgb(31, 29, 29);
     text-align: center;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
-.card-parent{
+
+.card-parent {
     width: 300px;
-    margin: 0 auto;
     border: 1px solid #fff;
-    margin-top: 30px;
+    margin: 30px;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
+    display: inline-block;
 }
-.p-tag{
+
+.p-tag {
     color: rgb(151, 151, 151);
 }
-.title{
+
+.title {
     color: aqua;
+}
+
+
+
+/* nested part */
+.nested-parent {
+    width: 300px;
+    border: 1px solid #fff;
+    margin: 30px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.nested-title {
+    font-size: 28px;
+}
+
+.nested-age {
+    font-size: 18px;
+    font-weight: 800;
+    color: aqua;
+}
+
+/* React icon Icon  */
+.icon-a{
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+.icon{
+    font-size: 18px;
 }

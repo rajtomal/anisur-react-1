@@ -7,9 +7,9 @@ const currentMonth = dateMonth + 1;
 const dateYear = date.getFullYear() ;
 
 function Card(props) {
-    const {titleName, title, detiles} = props; 
+    const {titleName, title, detiles, id} = props; 
     return(
-        <div className="card-parent">
+        <div key={id} className="card-parent">
             <h1 >{titleName}</h1>
             <h3 className="title">{title}</h3>
             <p className="p-tag">{detiles}</p>
