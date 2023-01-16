@@ -58,3 +58,14 @@ body {
 .icon{
     font-size: 18px;
 }
+
+
+.counter-btn{
+    background-color: rgb(4, 63, 4);
+    color: #fff;
+    padding: 15px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}

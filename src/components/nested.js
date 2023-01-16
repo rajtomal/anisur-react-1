@@ -1,5 +1,4 @@
 import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
@@ -49,7 +48,7 @@ function NestedData() {
 
 
     <div>
-      <h1> Nested Mapping </h1>
+      <h1><strong style={{color: "red"}}>Nested </strong>Mapping</h1>
       <Card>
         {nested.map((user, index) => (
           <article className="nested-parent" key={index}>
