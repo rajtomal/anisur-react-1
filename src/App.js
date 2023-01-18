@@ -6,6 +6,8 @@ import ClassComponent from "./components/class-component"
 import State from "./components/state"
 import Conditional from "./components/conditional-rendering/index"
 import EventIndex from "./components/event-handler-class/event-index"
+import Binding from "./components/event-binding/binding"
+import FromInput from "./components/from/from"
 
 
 
@@ -22,6 +24,7 @@ function App() {
 
   return (
     <div className="app">
+      <FromInput />
       <Conditional />
       <h1>Todo List with <strong style={{color : "red"}}>JSON Data</strong></h1>
       {Data.map((item, index) => <Card key = {index} titleName = {item.titleName} title = {item.title} detiles = {item.detiles}/>)}
@@ -29,6 +32,8 @@ function App() {
       <ClassComponent title = "Hello Class component" />
       <State />
       <EventIndex />
+
+      <Binding />
     </div>
   );
 }

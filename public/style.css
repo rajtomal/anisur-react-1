@@ -69,3 +69,24 @@ body {
     font-size: 20px;
     border-radius: 5px;
 }
+.name{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.button{
+    padding: 10px 50px;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+}
