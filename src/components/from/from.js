@@ -19,12 +19,15 @@ export default function FromInput() {
 
 
     const handlechange = (e) => {
-        const fillname = e.target.name
-        if( fillname === 'name'){
-            setuser({name: e.target.value, email})
-        }else if(fillname === 'email'){
-            setuser({name, email: e.target.value})
-        }
+
+        setuser({...user, [e.target.name]: e.target.value})
+
+        // const fillname = e.target.name
+        // if( fillname === 'name'){
+        //     setuser({name: e.target.value, email})
+        // }else if(fillname === 'email'){
+        //     setuser({name, email: e.target.value})
+        // }
     }
 
     const handlesubmit = (e) => {
