@@ -8,6 +8,7 @@ import Conditional from "./components/conditional-rendering/index"
 import EventIndex from "./components/event-handler-class/event-index"
 import Binding from "./components/event-binding/binding"
 import FromInput from "./components/from/from"
+import Child from './components/satet-lifting/child'
 
 
 
@@ -22,8 +23,13 @@ function App() {
   //   item.push(<Card titleName = {Data[x].titleName} title = {Data[x].title} detiles = {Data[x].detiles}/>)
   // }
 
+  const hendleChild = (child) => {
+    console.log("App: " + child)
+  }
+
   return (
     <div className="app">
+      <Child onChild={hendleChild} />
       <FromInput />
       <Conditional />
       <h1>Todo List with <strong style={{color : "red"}}>JSON Data</strong></h1>
