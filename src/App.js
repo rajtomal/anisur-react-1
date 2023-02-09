@@ -9,6 +9,9 @@ import EventIndex from "./components/event-handler-class/event-index"
 import Binding from "./components/event-binding/binding"
 import FromInput from "./components/from/from"
 import Child from './components/satet-lifting/child'
+import Toggle from './components/FAQS-Toggle/Toggle'
+import Use_Effect from './components/Use-Effect-hooks/Use_Effect'
+import DataFetch from './components/UseEffectFetchAPI/DataFetch'
 
 
 
@@ -29,17 +32,21 @@ function App() {
 
   return (
     <div className="app">
-      <Child onChild={hendleChild} />
-      <FromInput />
-      <Conditional />
-      <h1>Todo List with <strong style={{color : "red"}}>JSON Data</strong></h1>
-      {Data.map((item, index) => <Card key = {index} titleName = {item.titleName} title = {item.title} detiles = {item.detiles}/>)}
-      <NestedData />
-      <ClassComponent title = "Hello Class component" />
-      <State />
-      <EventIndex />
 
-      <Binding />
+      <DataFetch />
+      {/* <Use_Effect /> */}
+      {/* <Toggle /> */}
+      {/* <Child onChild={hendleChild} /> */}
+      {/* <FromInput /> */}
+      {/* <Conditional /> */}
+      {/* <h1>Todo List with <strong style={{color : "red"}}>JSON Data</strong></h1>
+      {Data.map((item, index) => <Card key = {index} titleName = {item.titleName} title = {item.title} detiles = {item.detiles}/>)} */}
+      {/* <NestedData /> */}
+      {/* <ClassComponent title = "Hello Class component" /> */}
+      {/* <State /> */}
+      {/* <EventIndex /> */}
+
+      {/* <Binding /> */}
     </div>
   );
 }
